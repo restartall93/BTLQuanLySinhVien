@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QuanLySinhVien</RootNamespace>
     <AssemblyName>QuanLySinhVien</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +49,12 @@
   <ItemGroup>
     <Compile Include="CustomParameter.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="frmDSGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSGV.Designer.cs">
+      <DependentUpon>frmDSGV.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDSSV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDSGV.resx">
+      <DependentUpon>frmDSGV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDSSV.resx">
       <DependentUpon>frmDSSV.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
