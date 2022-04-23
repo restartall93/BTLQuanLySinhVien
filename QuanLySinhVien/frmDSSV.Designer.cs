@@ -102,6 +102,7 @@
             this.Controls.Add(this.txtTukhoa);
             this.Controls.Add(this.label1);
             this.Name = "frmDSSV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDSSV";
             this.Load += new System.EventHandler(this.frmDSSV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();

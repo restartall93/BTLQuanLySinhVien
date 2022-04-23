@@ -100,6 +100,7 @@
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label1);
             this.Name = "frmDSGV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDSGV";
             this.Load += new System.EventHandler(this.frmDSGV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSGV)).EndInit();

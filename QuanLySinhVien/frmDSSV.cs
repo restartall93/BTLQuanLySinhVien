@@ -44,12 +44,19 @@ namespace QuanLySinhVien
 
         private void dgvSinhVien_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if(e.RowIndex >= 0)
+            {
+                var msv = dgvSinhVien.Rows[e.RowIndex].Cells["masinhvien"].Value.ToString();
 
+                new frmSinhVien(msv).ShowDialog();
+                LoadDSSV();
+            }
         }
 
         private void btnThemmoi_Click(object sender, EventArgs e)
         {
-
+            new frmSinhVien(null).ShowDialog();
+            LoadDSSV();
         }
 
         private void btnTimkiem_Click(object sender, EventArgs e)
