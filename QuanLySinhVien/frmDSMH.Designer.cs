@@ -39,10 +39,9 @@
             // btnThemmoi
             // 
             this.btnThemmoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemmoi.Location = new System.Drawing.Point(688, 44);
-            this.btnThemmoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemmoi.Location = new System.Drawing.Point(716, 36);
             this.btnThemmoi.Name = "btnThemmoi";
-            this.btnThemmoi.Size = new System.Drawing.Size(100, 28);
+            this.btnThemmoi.Size = new System.Drawing.Size(75, 23);
             this.btnThemmoi.TabIndex = 6;
             this.btnThemmoi.Text = "Thêm mới";
             this.btnThemmoi.UseVisualStyleBackColor = true;
@@ -51,10 +50,9 @@
             // btnTimKiem
             // 
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.Location = new System.Drawing.Point(580, 44);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimKiem.Location = new System.Drawing.Point(635, 36);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(100, 28);
+            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
             this.btnTimKiem.TabIndex = 7;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
@@ -63,20 +61,18 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.Location = new System.Drawing.Point(367, 46);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTimKiem.Location = new System.Drawing.Point(475, 37);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(204, 22);
+            this.txtTimKiem.Size = new System.Drawing.Size(154, 20);
             this.txtTimKiem.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 50);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(422, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Từ khóa";
             // 
@@ -90,19 +86,20 @@
             this.dgvDSMH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSMH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSMH.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dgvDSMH.Location = new System.Drawing.Point(12, 92);
+            this.dgvDSMH.Location = new System.Drawing.Point(9, 75);
+            this.dgvDSMH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDSMH.Name = "dgvDSMH";
             this.dgvDSMH.ReadOnly = true;
             this.dgvDSMH.RowHeadersWidth = 51;
             this.dgvDSMH.RowTemplate.Height = 24;
             this.dgvDSMH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSMH.Size = new System.Drawing.Size(776, 358);
+            this.dgvDSMH.Size = new System.Drawing.Size(782, 375);
             this.dgvDSMH.TabIndex = 8;
             this.dgvDSMH.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMH_CellDoubleClick);
             // 
             // frmDSMH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvDSMH);
@@ -110,6 +107,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDSMH";
             this.Text = "frmDSMH";
             this.Load += new System.EventHandler(this.frmDSMH_Load);

@@ -16,5 +16,20 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            frmDSGV f = new frmDSGV();
+            AddForm(f);
+        }
+        private void AddForm(Form f)
+        {
+            //frmDSGV f = new frmDSGV();
+            f.TopLevel = false;
+            f.AutoScroll = true;
+            f.FormBorderStyle = FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+            this.pnlContent.Controls.Add(f);
+            f.Show();
+        }
     }
 }
