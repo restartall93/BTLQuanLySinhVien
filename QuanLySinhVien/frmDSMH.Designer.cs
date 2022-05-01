@@ -58,6 +58,7 @@
             this.btnTimKiem.TabIndex = 7;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -111,6 +112,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDSMH";
             this.Text = "frmDSMH";
+            this.Load += new System.EventHandler(this.frmDSMH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
