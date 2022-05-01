@@ -61,6 +61,12 @@
     <Compile Include="frmDSGV.Designer.cs">
       <DependentUpon>frmDSGV.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDsLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDsLopHoc.Designer.cs">
+      <DependentUpon>frmDsLopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDSMH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDSGV.resx">
       <DependentUpon>frmDSGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDsLopHoc.resx">
+      <DependentUpon>frmDsLopHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDSMH.resx">
       <DependentUpon>frmDSMH.cs</DependentUpon>
