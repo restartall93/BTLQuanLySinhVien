@@ -23,13 +23,19 @@ namespace QuanLySinhVien
         }
         private void AddForm(Form f)
         {
-            //frmDSGV f = new frmDSGV();
+            this.pnlContent.Controls.Clear();
             f.TopLevel = false;
             f.AutoScroll = true;
             f.FormBorderStyle = FormBorderStyle.None;
             f.Dock = DockStyle.Fill;
             this.pnlContent.Controls.Add(f);
             f.Show();
+        }
+
+        private void sinhVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDSSV f = new frmDSSV();
+            AddForm(f);
         }
     }
 }
