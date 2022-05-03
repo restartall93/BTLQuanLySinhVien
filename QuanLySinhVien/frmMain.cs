@@ -44,5 +44,11 @@ namespace QuanLySinhVien
             frmDSGV f = new frmDSGV();
             AddForm(f);
         }
+
+        private void monHocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDSMH f = new frmDSMH();
+            AddForm(f);
+        }
     }
 }
