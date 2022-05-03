@@ -28,6 +28,7 @@ namespace QuanLySinhVien
             f.AutoScroll = true;
             f.FormBorderStyle = FormBorderStyle.None;
             f.Dock = DockStyle.Fill;
+            this.Text = f.Text;
             this.pnlContent.Controls.Add(f);
             f.Show();
         }
@@ -35,6 +36,12 @@ namespace QuanLySinhVien
         private void sinhVienToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDSSV f = new frmDSSV();
+            AddForm(f);
+        }
+
+        private void giaoVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDSGV f = new frmDSGV();
             AddForm(f);
         }
     }
