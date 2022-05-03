@@ -90,6 +90,7 @@
             this.dgvDSGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSGV.Size = new System.Drawing.Size(800, 365);
             this.dgvDSGV.TabIndex = 7;
+            this.dgvDSGV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSGV_CellDoubleClick);
             // 
             // frmDSGV
             // 
