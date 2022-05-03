@@ -47,6 +47,7 @@ namespace QuanLySinhVien
             {
                 var mgv = dgvDSGV.Rows[e.RowIndex].Cells["magiaovien"].Value.ToString();
                 new frmGV(mgv).ShowDialog();
+                loadDSGV();
             }
         }
     }

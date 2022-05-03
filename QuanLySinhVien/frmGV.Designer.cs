@@ -239,6 +239,7 @@
             this.Controls.Add(this.txtHo);
             this.Controls.Add(this.label1);
             this.Name = "frmGV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGV";
             this.Load += new System.EventHandler(this.frmGV_Load);
             this.ResumeLayout(false);
