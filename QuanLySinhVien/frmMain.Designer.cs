@@ -35,7 +35,7 @@
             this.sinhVienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monHocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giaoVienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diemThiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lopHocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chucNangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dangKyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traCuuDiemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +79,7 @@
             this.sinhVienToolStripMenuItem,
             this.monHocToolStripMenuItem,
             this.giaoVienToolStripMenuItem,
-            this.diemThiToolStripMenuItem});
+            this.lopHocToolStripMenuItem});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
             this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.quanLyToolStripMenuItem.Text = "Quản Lý";
@@ -105,12 +105,12 @@
             this.giaoVienToolStripMenuItem.Text = "Giáo Viên";
             this.giaoVienToolStripMenuItem.Click += new System.EventHandler(this.giaoVienToolStripMenuItem_Click);
             // 
-            // diemThiToolStripMenuItem
+            // lopHocToolStripMenuItem
             // 
-            this.diemThiToolStripMenuItem.Name = "diemThiToolStripMenuItem";
-            this.diemThiToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.diemThiToolStripMenuItem.Text = "Điểm Thi";
-            this.diemThiToolStripMenuItem.Click += new System.EventHandler(this.diemThiToolStripMenuItem_Click);
+            this.lopHocToolStripMenuItem.Name = "lopHocToolStripMenuItem";
+            this.lopHocToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lopHocToolStripMenuItem.Text = "Lớp Học";
+            this.lopHocToolStripMenuItem.Click += new System.EventHandler(this.lopHocToolStripMenuItem_Click);
             // 
             // chucNangToolStripMenuItem
             // 
@@ -177,7 +177,7 @@
         private System.Windows.Forms.ToolStripMenuItem sinhVienToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monHocToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giaoVienToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem diemThiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lopHocToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chucNangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dangKyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem traCuuDiemToolStripMenuItem;

@@ -51,9 +51,9 @@ namespace QuanLySinhVien
             AddForm(f);
         }
 
-        private void diemThiToolStripMenuItem_Click(object sender, EventArgs e)
+        private void lopHocToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDSDiemThi f = new frmDSDiemThi();
+            frmDsLopHoc f = new frmDsLopHoc();
             AddForm(f);
         }
     }
