@@ -19,7 +19,7 @@ namespace QuanLySinhVien
         private string tukhoa = "";
         private void frmDsLopHoc_Load(object sender, EventArgs e)
         {
-
+            loadDSLH();
         }
         private void loadDSLH()
         {
@@ -43,7 +43,17 @@ namespace QuanLySinhVien
 
         private void btnThemmoi_Click(object sender, EventArgs e)
         {
+            new frmLopHoc(null).ShowDialog();
+            loadDSLH();
+        }
 
+        private void dgvLopHoc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                new frmLopHoc(dgvLopHoc.Rows[e.RowIndex].Cells["malophoc"].Value.ToString()).ShowDialog();
+                loadDSLH();
+            }
         }
     }
 }

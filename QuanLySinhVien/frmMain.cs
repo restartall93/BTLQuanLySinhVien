@@ -18,7 +18,7 @@ namespace QuanLySinhVien
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-            frmDSGV f = new frmDSGV();
+            frmWelcome f = new frmWelcome();
             AddForm(f);
         }
         private void AddForm(Form f)

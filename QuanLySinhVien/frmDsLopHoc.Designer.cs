@@ -96,6 +96,7 @@
             this.dgvLopHoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLopHoc.Size = new System.Drawing.Size(764, 364);
             this.dgvLopHoc.TabIndex = 13;
+            this.dgvLopHoc.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLopHoc_CellDoubleClick);
             // 
             // frmDsLopHoc
             // 
