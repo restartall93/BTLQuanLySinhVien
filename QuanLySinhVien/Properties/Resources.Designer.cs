@@ -59,5 +59,15 @@ namespace QuanLySinhVien.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _279162948_353681246628011_4741708765411558214_n {
+            get {
+                object obj = ResourceManager.GetObject("279162948_353681246628011_4741708765411558214_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
