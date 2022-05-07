@@ -16,7 +16,7 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
-        private string tendangnhap;
+        public string tendangnhap = "";
         public string loaitk;
        
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace QuanLySinhVien
 
             tendangnhap = txtTendangnhap.Text;
             loaitk = "";
-
+            #region swtk
             switch (cbbLoaiTaiKhoan.Text)
             {
                 case "Quản trị viên":
@@ -56,7 +56,7 @@ namespace QuanLySinhVien
                     loaitk = "sv";
                     break;
             }
-
+            #endregion
             List<CustomParameter> lst = new List<CustomParameter>()
             {
                 new CustomParameter()

@@ -16,8 +16,31 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+        private string taikhoan;
+        private string loaitk;
         private void frmMain_Load(object sender, EventArgs e)
         {
+            var fn = new frmDangnhap();
+            fn.ShowDialog();
+            taikhoan = fn.tendangnhap;
+            loaitk = fn.loaitk;
+            if (loaitk.Equals("admin"))
+            {
+                chamDiemToolStripMenuItem.Visible = false;
+                chucNangToolStripMenuItem.Visible = false;
+            }
+            else
+            {
+                quanLyToolStripMenuItem.Visible = false;
+                if (loaitk.Equals("gv"))
+                {
+                    chucNangToolStripMenuItem.Visible = false;
+                }
+                else
+                {
+                    chamDiemToolStripMenuItem.Visible = false;
+                }
+            }
             frmWelcome f = new frmWelcome();
             AddForm(f);
         }
