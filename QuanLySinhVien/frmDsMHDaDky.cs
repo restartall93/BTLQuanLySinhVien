@@ -21,9 +21,9 @@ namespace QuanLySinhVien
 
         private void frmDsMHDaDky_Load(object sender, EventArgs e)
         {
-            LoadMonDk();
+            LoadMonDky();
         }
-        private void LoadMonDk()
+        private void LoadMonDky()
         {
             List<CustomParameter> lst = new List<CustomParameter>()
             {
@@ -38,7 +38,8 @@ namespace QuanLySinhVien
 
         private void btnDkyMoi_Click(object sender, EventArgs e)
         {
-            
+            new frmDangkyMonhoc(masv).ShowDialog();
+            LoadMonDky();
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)

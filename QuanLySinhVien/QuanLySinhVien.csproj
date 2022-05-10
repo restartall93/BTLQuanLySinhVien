@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="CustomParameter.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="frmDangkyMonhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangkyMonhoc.Designer.cs">
+      <DependentUpon>frmDangkyMonhoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDangkyMonhoc.resx">
+      <DependentUpon>frmDangkyMonhoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangnhap.resx">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </EmbeddedResource>
