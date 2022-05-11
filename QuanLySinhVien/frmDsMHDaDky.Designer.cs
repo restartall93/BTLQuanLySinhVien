@@ -84,12 +84,18 @@
             // 
             this.dgvDSMHDky.AllowUserToAddRows = false;
             this.dgvDSMHDky.AllowUserToDeleteRows = false;
+            this.dgvDSMHDky.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDSMHDky.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSMHDky.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSMHDky.Location = new System.Drawing.Point(24, 48);
+            this.dgvDSMHDky.MultiSelect = false;
             this.dgvDSMHDky.Name = "dgvDSMHDky";
             this.dgvDSMHDky.ReadOnly = true;
             this.dgvDSMHDky.RowHeadersWidth = 51;
             this.dgvDSMHDky.RowTemplate.Height = 24;
+            this.dgvDSMHDky.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSMHDky.Size = new System.Drawing.Size(1031, 494);
             this.dgvDSMHDky.TabIndex = 8;
             // 
@@ -104,6 +110,7 @@
             this.Controls.Add(this.txtTimkiem);
             this.Controls.Add(this.label1);
             this.Name = "frmDsMHDaDky";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Sách Môn Học Đã Đăng Ký";
             this.Load += new System.EventHandler(this.frmDsMHDaDky_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMHDky)).EndInit();

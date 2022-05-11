@@ -79,5 +79,11 @@ namespace QuanLySinhVien
             frmDsLopHoc f = new frmDsLopHoc();
             AddForm(f);
         }
+
+        private void dangKyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmDsMHDaDky(taikhoan);
+            AddForm(f);
+        }
     }
 }
