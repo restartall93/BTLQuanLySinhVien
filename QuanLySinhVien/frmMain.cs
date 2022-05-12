@@ -85,5 +85,11 @@ namespace QuanLySinhVien
             var f = new frmDsMHDaDky(taikhoan);
             AddForm(f);
         }
+
+        private void traCuuDiemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmQuanLyLop(taikhoan);
+            AddForm(f);
+        }
     }
 }
