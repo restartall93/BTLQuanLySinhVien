@@ -32,6 +32,8 @@
             this.txtTuKhoa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDSSV = new System.Windows.Forms.DataGridView();
+            this.btnKetThuc = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,10 +41,9 @@
             // 
             this.btnTraCuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuu.Location = new System.Drawing.Point(693, 20);
-            this.btnTraCuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTraCuu.Location = new System.Drawing.Point(520, 16);
             this.btnTraCuu.Name = "btnTraCuu";
-            this.btnTraCuu.Size = new System.Drawing.Size(100, 28);
+            this.btnTraCuu.Size = new System.Drawing.Size(75, 23);
             this.btnTraCuu.TabIndex = 13;
             this.btnTraCuu.Text = "Tra cứu";
             this.btnTraCuu.UseVisualStyleBackColor = true;
@@ -51,10 +52,9 @@
             // 
             this.txtTuKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTuKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTuKhoa.Location = new System.Drawing.Point(357, 22);
-            this.txtTuKhoa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTuKhoa.Location = new System.Drawing.Point(291, 19);
             this.txtTuKhoa.Name = "txtTuKhoa";
-            this.txtTuKhoa.Size = new System.Drawing.Size(296, 23);
+            this.txtTuKhoa.Size = new System.Drawing.Size(223, 20);
             this.txtTuKhoa.TabIndex = 12;
             // 
             // label1
@@ -62,10 +62,9 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(236, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(200, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Tìm kiếm";
             // 
@@ -78,27 +77,52 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDSSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSSV.Location = new System.Drawing.Point(26, 69);
+            this.dgvDSSV.Location = new System.Drawing.Point(20, 56);
+            this.dgvDSSV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDSSV.Name = "dgvDSSV";
             this.dgvDSSV.ReadOnly = true;
             this.dgvDSSV.RowHeadersWidth = 51;
             this.dgvDSSV.RowTemplate.Height = 24;
             this.dgvDSSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSSV.Size = new System.Drawing.Size(762, 369);
+            this.dgvDSSV.Size = new System.Drawing.Size(572, 270);
             this.dgvDSSV.TabIndex = 14;
+            // 
+            // btnKetThuc
+            // 
+            this.btnKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKetThuc.Location = new System.Drawing.Point(469, 331);
+            this.btnKetThuc.Name = "btnKetThuc";
+            this.btnKetThuc.Size = new System.Drawing.Size(122, 23);
+            this.btnKetThuc.TabIndex = 15;
+            this.btnKetThuc.Text = "Kết thúc lớp học";
+            this.btnKetThuc.UseVisualStyleBackColor = true;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Location = new System.Drawing.Point(358, 331);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(106, 23);
+            this.btnLuu.TabIndex = 16;
+            this.btnLuu.Text = "Lưu bảng điểm";
+            this.btnLuu.UseVisualStyleBackColor = true;
             // 
             // frmChamDiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnKetThuc);
+            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgvDSSV);
             this.Controls.Add(this.btnTraCuu);
             this.Controls.Add(this.txtTuKhoa);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmChamDiem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChamDiem";
+            this.Load += new System.EventHandler(this.frmChamDiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,5 +135,7 @@
         private System.Windows.Forms.TextBox txtTuKhoa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDSSV;
+        private System.Windows.Forms.Button btnKetThuc;
+        private System.Windows.Forms.Button btnLuu;
     }
 }

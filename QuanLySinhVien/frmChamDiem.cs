@@ -35,5 +35,19 @@ namespace QuanLySinhVien
             });
             dgvDSSV.DataSource = new Database().SelectData("dssv", lstPara);
         }
+
+        private void frmChamDiem_Load(object sender, EventArgs e)
+        {
+            LoadDSSV();
+            dgvDSSV.Columns["masinhvien"].HeaderText = "MSV"; //column index = 0 -- chỉ số cột
+            dgvDSSV.Columns["hoten"].HeaderText = "Họ và tên";//column index = 1
+            dgvDSSV.Columns["lanhoc"].HeaderText = "Lần học";//columnindex = 2
+            dgvDSSV.Columns["diemthilan1"].HeaderText = "Điểm lần 1";//column index = 3
+            dgvDSSV.Columns["diemthilan2"].HeaderText = "Điểm lần 2";//column index = 4
+            for (int i = 1; i<=2; i++)
+            {
+                dgvDSSV.Columns[i].ReadOnly = true;
+            }
+        }
     }
 }
