@@ -49,5 +49,37 @@ namespace QuanLySinhVien
                 dgvDSSV.Columns[i].ReadOnly = true;
             }
         }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKetThuc_Click(object sender, EventArgs e)
+        {
+            if(DialogResult.Yes == MessageBox.Show("Bạn thực sự muốn đóng lớp học phần này?","Xác thực thao tác", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                var lstPara = new List<CustomParameter>()
+                {
+                    new CustomParameter()
+                    {
+                        key = "@magiaovien",
+                        value = magv,
+                    },
+                    new CustomParameter()
+                    {
+                        key = "@malophoc",
+                        value = malophoc,
+                    }
+                };
+                var rs = new Database().ExeCute("ketthuchocphan", lstPara);
+                if (rs == 1)
+                {
+                    MessageBox.Show("Kết thúc học phần thành công!");
+                    this.Dispose();
+                }
+
+            }
+        }
     }
 }

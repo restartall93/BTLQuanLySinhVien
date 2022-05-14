@@ -78,7 +78,7 @@
             this.dgvDSSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSSV.Location = new System.Drawing.Point(20, 56);
-            this.dgvDSSV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDSSV.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSSV.Name = "dgvDSSV";
             this.dgvDSSV.ReadOnly = true;
             this.dgvDSSV.RowHeadersWidth = 51;
@@ -96,6 +96,7 @@
             this.btnKetThuc.TabIndex = 15;
             this.btnKetThuc.Text = "Kết thúc lớp học";
             this.btnKetThuc.UseVisualStyleBackColor = true;
+            this.btnKetThuc.Click += new System.EventHandler(this.btnKetThuc_Click);
             // 
             // btnLuu
             // 
@@ -106,6 +107,7 @@
             this.btnLuu.TabIndex = 16;
             this.btnLuu.Text = "Lưu bảng điểm";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // frmChamDiem
             // 
@@ -118,7 +120,7 @@
             this.Controls.Add(this.btnTraCuu);
             this.Controls.Add(this.txtTuKhoa);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmChamDiem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChamDiem";
