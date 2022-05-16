@@ -128,5 +128,10 @@ namespace QuanLySinhVien
 
             }
         }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+            LoadDSSV();
+        }
     }
 }

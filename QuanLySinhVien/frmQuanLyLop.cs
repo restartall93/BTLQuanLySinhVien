@@ -48,5 +48,14 @@ namespace QuanLySinhVien
         {
             LoadDSLop();
         }
+
+        private void dgvDSLop_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dgvDSLop.Rows[e.RowIndex].Index >= 0)
+            {
+                new frmChamDiem(dgvDSLop.Rows[e.RowIndex].Cells["malophoc"].Value.ToString(), mgv).ShowDialog();
+                LoadDSLop();
+            }
+        }
     }
 }

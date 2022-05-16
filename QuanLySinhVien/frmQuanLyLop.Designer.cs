@@ -83,6 +83,7 @@
             this.dgvDSLop.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSLop.Size = new System.Drawing.Size(752, 375);
             this.dgvDSLop.TabIndex = 10;
+            this.dgvDSLop.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSLop_CellDoubleClick);
             // 
             // frmQuanLyLop
             // 
