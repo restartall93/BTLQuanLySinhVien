@@ -52,7 +52,54 @@ namespace QuanLySinhVien
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            if(DialogResult.Yes == MessageBox.Show("Bạn muốn lưu bảng điểm?", "Xác nhận thao tác", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                var db = new Database();
+                List<CustomParameter> lstPara;
+                int chk = 1;
+                foreach(DataGridViewRow r in dgvDSSV.Rows)
+                {
+                    lstPara = new List<CustomParameter>();
 
+                    lstPara = new List<CustomParameter>();
+                    lstPara.Add(new CustomParameter()
+                    {
+                        key = "@magiaovien",
+                        value = magv
+                    });
+                    lstPara.Add(new CustomParameter()
+                    {
+                        key = "@malophoc",
+                        value = malophoc
+                    });
+                    lstPara.Add(new CustomParameter()
+                    {
+                        key = "@masinhvien",
+                        value = r.Cells["masinhvien"].Value.ToString()
+                    });
+                    lstPara.Add(new CustomParameter()
+                    {
+                        key = "@diemlan1",
+                        value = r.Cells["diemthilan1"].Value.ToString()
+                    });
+                    lstPara.Add(new CustomParameter()
+                    {
+                        key = "@diemlan2",
+                        value = r.Cells["diemthilan2"].Value.ToString()
+                    });
+                    //thực thi truy vấn
+                    chk = db.ExeCute("chamdiem", lstPara);
+                    if(chk != 1) //nếu chấm điểm thất bại
+                    {
+                        MessageBox.Show("Chấm điểm thất bại");
+                        break;
+                    }
+                }
+                if(chk == 1)
+                {
+                    MessageBox.Show("Lưu bảng điểm thành công");
+                }
+            }
         }
 
         private void btnKetThuc_Click(object sender, EventArgs e)
