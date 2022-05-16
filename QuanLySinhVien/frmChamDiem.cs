@@ -60,8 +60,6 @@ namespace QuanLySinhVien
                 foreach(DataGridViewRow r in dgvDSSV.Rows)
                 {
                     lstPara = new List<CustomParameter>();
-
-                    lstPara = new List<CustomParameter>();
                     lstPara.Add(new CustomParameter()
                     {
                         key = "@magiaovien",
