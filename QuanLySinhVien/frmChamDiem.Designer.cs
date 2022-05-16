@@ -80,8 +80,8 @@
             this.dgvDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSSV.Location = new System.Drawing.Point(20, 56);
             this.dgvDSSV.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDSSV.MultiSelect = false;
             this.dgvDSSV.Name = "dgvDSSV";
-            this.dgvDSSV.ReadOnly = true;
             this.dgvDSSV.RowHeadersWidth = 51;
             this.dgvDSSV.RowTemplate.Height = 24;
             this.dgvDSSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
