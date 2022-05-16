@@ -26,7 +26,7 @@ namespace QuanLySinhVien
             loaitk = fn.loaitk;
             if (loaitk.Equals("admin"))
             {
-                chamDiemToolStripMenuItem.Visible = false;
+                quanLyLopToolStripMenuItem.Visible = false;
                 chucNangToolStripMenuItem.Visible = false;
             }
             else
@@ -38,7 +38,7 @@ namespace QuanLySinhVien
                 }
                 else
                 {
-                    chamDiemToolStripMenuItem.Visible = false;
+                    quanLyLopToolStripMenuItem.Visible = false;
                 }
             }
             frmWelcome f = new frmWelcome();
@@ -87,6 +87,17 @@ namespace QuanLySinhVien
         }
 
         private void traCuuDiemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmQuanLyLop(taikhoan);
+            AddForm(f);
+        }
+
+        private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void quanLyLopToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var f = new frmQuanLyLop(taikhoan);
             AddForm(f);
