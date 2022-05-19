@@ -50,5 +50,36 @@ namespace QuanLySinhVien
                 loadDSGV();
             }
         }
+
+        private void dgvDSGV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                if (e.ColumnIndex == dgvDSGV.Columns["btnDelete"].Index)
+                {
+                    //Xác nhận xoá
+                    if(MessageBox.Show("Bạn chắc chắn muốn xoá giáo viên: " + dgvDSGV.Rows[e.RowIndex].Cells["hoten"].Value.ToString() + "?",
+                        "Xác nhận xoá!",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        var maGV = dgvDSGV.Rows[e.RowIndex].Cells["magiaovien"].Value.ToString();
+                        var sql = "deleteGV";
+                        var lstPara = new List<CustomParameter>()
+                        {
+                            new CustomParameter
+                            {
+                                key = "@magiaovien",
+                                value = maGV
+                            }
+                        };
+                        var result = new Database().ExeCute(sql, lstPara);
+                        if (result == 1)
+                        {
+                            MessageBox.Show("Xoá giáo viên thành công");
+                            loadDSGV();
+                        }
+                    }
+                }
+            }
+        }
     }
 }
