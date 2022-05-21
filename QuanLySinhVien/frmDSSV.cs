@@ -32,14 +32,14 @@ namespace QuanLySinhVien
             });
             dgvSinhVien.DataSource = new Database().SelectData("SelectAllSinhVien", lstPara);
             //đặt tên cột
-            dgvSinhVien.Columns["masinhvien"].HeaderText = "Mã SV";
-            dgvSinhVien.Columns["hoten"].HeaderText = "Họ tên";
-            dgvSinhVien.Columns["nsinh"].HeaderText = "Ngày sinh";
-            dgvSinhVien.Columns["gt"].HeaderText = "Giới tính";
-            dgvSinhVien.Columns["quequan"].HeaderText = "Quê quán";
-            dgvSinhVien.Columns["diachi"].HeaderText = "Địa chỉ";
-            dgvSinhVien.Columns["email"].HeaderText = "Email";
-            dgvSinhVien.Columns["dienthoai"].HeaderText = "Điện thoại";
+            //dgvSinhVien.Columns["masinhvien"].HeaderText = "Mã SV";
+            //dgvSinhVien.Columns["hoten"].HeaderText = "Họ tên";
+            //dgvSinhVien.Columns["nsinh"].HeaderText = "Ngày sinh";
+            //dgvSinhVien.Columns["gt"].HeaderText = "Giới tính";
+            //dgvSinhVien.Columns["quequan"].HeaderText = "Quê quán";
+            //dgvSinhVien.Columns["diachi"].HeaderText = "Địa chỉ";
+            //dgvSinhVien.Columns["email"].HeaderText = "Email";
+            //dgvSinhVien.Columns["dienthoai"].HeaderText = "Điện thoại";
         }
 
         private void dgvSinhVien_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

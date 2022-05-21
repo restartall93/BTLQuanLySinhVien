@@ -33,6 +33,15 @@
             this.txtTukhoa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSinhVien = new System.Windows.Forms.DataGridView();
+            this.masinhvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nsinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quequan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +94,16 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSinhVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSinhVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSinhVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.masinhvien,
+            this.hoten,
+            this.nsinh,
+            this.gt,
+            this.quequan,
+            this.diachi,
+            this.dienthoai,
+            this.email,
+            this.btnDelete});
             this.dgvSinhVien.Location = new System.Drawing.Point(0, 80);
             this.dgvSinhVien.Name = "dgvSinhVien";
             this.dgvSinhVien.ReadOnly = true;
@@ -92,6 +111,70 @@
             this.dgvSinhVien.Size = new System.Drawing.Size(800, 370);
             this.dgvSinhVien.TabIndex = 9;
             this.dgvSinhVien.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSinhVien_CellDoubleClick);
+            // 
+            // masinhvien
+            // 
+            this.masinhvien.DataPropertyName = "masinhvien";
+            this.masinhvien.HeaderText = "Mã Sinh Viên";
+            this.masinhvien.Name = "masinhvien";
+            this.masinhvien.ReadOnly = true;
+            // 
+            // hoten
+            // 
+            this.hoten.DataPropertyName = "hoten";
+            this.hoten.HeaderText = "Họ Và Tên";
+            this.hoten.Name = "hoten";
+            this.hoten.ReadOnly = true;
+            // 
+            // nsinh
+            // 
+            this.nsinh.DataPropertyName = "nsinh";
+            this.nsinh.HeaderText = "Ngày Sinh";
+            this.nsinh.Name = "nsinh";
+            this.nsinh.ReadOnly = true;
+            // 
+            // gt
+            // 
+            this.gt.DataPropertyName = "gt";
+            this.gt.HeaderText = "Giới Tính";
+            this.gt.Name = "gt";
+            this.gt.ReadOnly = true;
+            // 
+            // quequan
+            // 
+            this.quequan.DataPropertyName = "quequan";
+            this.quequan.HeaderText = "Quê Quán";
+            this.quequan.Name = "quequan";
+            this.quequan.ReadOnly = true;
+            // 
+            // diachi
+            // 
+            this.diachi.DataPropertyName = "diachi";
+            this.diachi.HeaderText = "Địa Chỉ";
+            this.diachi.Name = "diachi";
+            this.diachi.ReadOnly = true;
+            // 
+            // dienthoai
+            // 
+            this.dienthoai.DataPropertyName = "dienthoai";
+            this.dienthoai.HeaderText = "Điện Thoại";
+            this.dienthoai.Name = "dienthoai";
+            this.dienthoai.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.HeaderText = "";
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.ReadOnly = true;
+            this.btnDelete.Text = "Xoá";
+            this.btnDelete.UseColumnTextForButtonValue = true;
             // 
             // frmDSSV
             // 
@@ -120,5 +203,14 @@
         private System.Windows.Forms.TextBox txtTukhoa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvSinhVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn masinhvien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nsinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quequan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diachi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dienthoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
     }
 }
