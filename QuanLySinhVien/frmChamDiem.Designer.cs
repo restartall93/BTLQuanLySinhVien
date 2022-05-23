@@ -54,7 +54,7 @@
             // 
             this.txtTuKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTuKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTuKhoa.Location = new System.Drawing.Point(491, 19);
+            this.txtTuKhoa.Location = new System.Drawing.Point(491, 17);
             this.txtTuKhoa.Name = "txtTuKhoa";
             this.txtTuKhoa.Size = new System.Drawing.Size(223, 20);
             this.txtTuKhoa.TabIndex = 12;
@@ -64,7 +64,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(400, 22);
+            this.label1.Location = new System.Drawing.Point(419, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 11;
@@ -79,35 +79,41 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDSSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSSV.Location = new System.Drawing.Point(20, 56);
+            this.dgvDSSV.Location = new System.Drawing.Point(20, 44);
             this.dgvDSSV.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSSV.MultiSelect = false;
             this.dgvDSSV.Name = "dgvDSSV";
             this.dgvDSSV.RowHeadersWidth = 51;
             this.dgvDSSV.RowTemplate.Height = 24;
             this.dgvDSSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSSV.Size = new System.Drawing.Size(772, 354);
+            this.dgvDSSV.Size = new System.Drawing.Size(772, 355);
             this.dgvDSSV.TabIndex = 14;
             // 
             // btnKetThuc
             // 
             this.btnKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKetThuc.Location = new System.Drawing.Point(666, 415);
+            this.btnKetThuc.Image = global::QuanLySinhVien.Properties.Resources.icon_done;
+            this.btnKetThuc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKetThuc.Location = new System.Drawing.Point(653, 404);
             this.btnKetThuc.Name = "btnKetThuc";
-            this.btnKetThuc.Size = new System.Drawing.Size(122, 23);
+            this.btnKetThuc.Size = new System.Drawing.Size(135, 34);
             this.btnKetThuc.TabIndex = 15;
             this.btnKetThuc.Text = "Kết thúc lớp học";
+            this.btnKetThuc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnKetThuc.UseVisualStyleBackColor = true;
             this.btnKetThuc.Click += new System.EventHandler(this.btnKetThuc_Click);
             // 
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(555, 415);
+            this.btnLuu.Image = global::QuanLySinhVien.Properties.Resources.icon_save;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(508, 404);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(106, 23);
+            this.btnLuu.Size = new System.Drawing.Size(135, 34);
             this.btnLuu.TabIndex = 16;
             this.btnLuu.Text = "Lưu bảng điểm";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
@@ -126,7 +132,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmChamDiem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmChamDiem";
+            this.Text = "Chấm Điểm";
             this.Load += new System.EventHandler(this.frmChamDiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSV)).EndInit();
             this.ResumeLayout(false);
