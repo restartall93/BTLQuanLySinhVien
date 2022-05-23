@@ -49,20 +49,23 @@
             // btnThemmoi
             // 
             this.btnThemmoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemmoi.Location = new System.Drawing.Point(713, 25);
+            this.btnThemmoi.Image = global::QuanLySinhVien.Properties.Resources.add_people;
+            this.btnThemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemmoi.Location = new System.Drawing.Point(703, 25);
             this.btnThemmoi.Name = "btnThemmoi";
-            this.btnThemmoi.Size = new System.Drawing.Size(75, 23);
+            this.btnThemmoi.Size = new System.Drawing.Size(85, 34);
             this.btnThemmoi.TabIndex = 8;
             this.btnThemmoi.Text = "Thêm mới";
+            this.btnThemmoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemmoi.UseVisualStyleBackColor = true;
             this.btnThemmoi.Click += new System.EventHandler(this.btnThemmoi_Click);
             // 
             // btnTimkiem
             // 
             this.btnTimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimkiem.Location = new System.Drawing.Point(632, 27);
+            this.btnTimkiem.Location = new System.Drawing.Point(612, 25);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimkiem.Size = new System.Drawing.Size(85, 34);
             this.btnTimkiem.TabIndex = 7;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
@@ -71,7 +74,7 @@
             // txtTukhoa
             // 
             this.txtTukhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTukhoa.Location = new System.Drawing.Point(441, 27);
+            this.txtTukhoa.Location = new System.Drawing.Point(421, 32);
             this.txtTukhoa.Name = "txtTukhoa";
             this.txtTukhoa.Size = new System.Drawing.Size(185, 20);
             this.txtTukhoa.TabIndex = 6;
@@ -79,12 +82,13 @@
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(388, 30);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(330, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "Từ khóa";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvSinhVien
             // 

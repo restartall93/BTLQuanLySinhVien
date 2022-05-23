@@ -92,5 +92,10 @@ namespace QuanLySinhVien
         {
             Application.Exit();
         }
+
+        private void frmDangnhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

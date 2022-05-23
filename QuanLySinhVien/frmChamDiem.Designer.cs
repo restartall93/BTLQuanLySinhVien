@@ -42,7 +42,7 @@
             // 
             this.btnTraCuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuu.Location = new System.Drawing.Point(720, 16);
+            this.btnTraCuu.Location = new System.Drawing.Point(777, 16);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(75, 23);
             this.btnTraCuu.TabIndex = 13;
@@ -54,7 +54,7 @@
             // 
             this.txtTuKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTuKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTuKhoa.Location = new System.Drawing.Point(491, 17);
+            this.txtTuKhoa.Location = new System.Drawing.Point(548, 17);
             this.txtTuKhoa.Name = "txtTuKhoa";
             this.txtTuKhoa.Size = new System.Drawing.Size(223, 20);
             this.txtTuKhoa.TabIndex = 12;
@@ -64,7 +64,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(419, 21);
+            this.label1.Location = new System.Drawing.Point(476, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 11;
@@ -79,14 +79,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDSSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSSV.Location = new System.Drawing.Point(20, 44);
+            this.dgvDSSV.Location = new System.Drawing.Point(20, 64);
             this.dgvDSSV.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSSV.MultiSelect = false;
             this.dgvDSSV.Name = "dgvDSSV";
             this.dgvDSSV.RowHeadersWidth = 51;
             this.dgvDSSV.RowTemplate.Height = 24;
             this.dgvDSSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSSV.Size = new System.Drawing.Size(772, 355);
+            this.dgvDSSV.Size = new System.Drawing.Size(829, 395);
             this.dgvDSSV.TabIndex = 14;
             // 
             // btnKetThuc
@@ -94,7 +94,7 @@
             this.btnKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKetThuc.Image = global::QuanLySinhVien.Properties.Resources.icon_done;
             this.btnKetThuc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKetThuc.Location = new System.Drawing.Point(653, 404);
+            this.btnKetThuc.Location = new System.Drawing.Point(710, 464);
             this.btnKetThuc.Name = "btnKetThuc";
             this.btnKetThuc.Size = new System.Drawing.Size(135, 34);
             this.btnKetThuc.TabIndex = 15;
@@ -108,7 +108,7 @@
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Image = global::QuanLySinhVien.Properties.Resources.icon_save;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(508, 404);
+            this.btnLuu.Location = new System.Drawing.Point(565, 464);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(135, 34);
             this.btnLuu.TabIndex = 16;
@@ -121,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(857, 510);
             this.Controls.Add(this.btnKetThuc);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgvDSSV);

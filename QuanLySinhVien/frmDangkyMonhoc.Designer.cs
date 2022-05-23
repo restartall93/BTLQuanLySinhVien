@@ -41,7 +41,7 @@
             this.dgvDSLH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSLH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDSLH.Location = new System.Drawing.Point(0, 0);
-            this.dgvDSLH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDSLH.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSLH.MultiSelect = false;
             this.dgvDSLH.Name = "dgvDSLH";
             this.dgvDSLH.ReadOnly = true;
@@ -59,11 +59,11 @@
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvDSLH);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDangkyMonhoc";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Danh sach lop hoc";
+            this.Text = "Danh Sách Lớp Học";
             this.Load += new System.EventHandler(this.frmDangkyMonhoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSLH)).EndInit();
             this.ResumeLayout(false);
