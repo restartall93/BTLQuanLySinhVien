@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLopHoc));
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.cbbGiaoVien = new System.Windows.Forms.ComboBox();
@@ -38,10 +39,9 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(332, 103);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Location = new System.Drawing.Point(249, 84);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(100, 28);
+            this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 7;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -49,10 +49,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(188, 103);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Location = new System.Drawing.Point(141, 84);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(100, 28);
+            this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -61,52 +60,50 @@
             // cbbGiaoVien
             // 
             this.cbbGiaoVien.FormattingEnabled = true;
-            this.cbbGiaoVien.Location = new System.Drawing.Point(161, 57);
-            this.cbbGiaoVien.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbGiaoVien.Location = new System.Drawing.Point(121, 46);
             this.cbbGiaoVien.Name = "cbbGiaoVien";
-            this.cbbGiaoVien.Size = new System.Drawing.Size(432, 24);
+            this.cbbGiaoVien.Size = new System.Drawing.Size(325, 21);
             this.cbbGiaoVien.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 60);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(34, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Giáo viên";
             // 
             // cbbMonhoc
             // 
             this.cbbMonhoc.FormattingEnabled = true;
-            this.cbbMonhoc.Location = new System.Drawing.Point(161, 23);
-            this.cbbMonhoc.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbMonhoc.Location = new System.Drawing.Point(121, 19);
             this.cbbMonhoc.Name = "cbbMonhoc";
-            this.cbbMonhoc.Size = new System.Drawing.Size(432, 24);
+            this.cbbMonhoc.Size = new System.Drawing.Size(325, 21);
             this.cbbMonhoc.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(34, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 16);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Môn học";
             // 
             // frmLopHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 154);
+            this.ClientSize = new System.Drawing.Size(479, 125);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.cbbGiaoVien);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbbMonhoc);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmLopHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLopHoc";
