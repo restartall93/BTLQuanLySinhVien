@@ -47,11 +47,6 @@ namespace QuanLySinhVien
             
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtTimkiem_TextChanged(object sender, EventArgs e)
         {
 

@@ -94,7 +94,6 @@
             // 
             // btnThemmoi
             // 
-            this.btnThemmoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThemmoi.Image = global::QuanLySinhVien.Properties.Resources.button_add_icon;
             this.btnThemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemmoi.Location = new System.Drawing.Point(12, 8);

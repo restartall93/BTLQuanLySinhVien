@@ -70,7 +70,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Từ khóa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvDSMHDky
             // 
@@ -94,7 +93,6 @@
             // 
             // btnDkyMoi
             // 
-            this.btnDkyMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDkyMoi.Image = global::QuanLySinhVien.Properties.Resources.Science_Courses_icon;
             this.btnDkyMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDkyMoi.Location = new System.Drawing.Point(18, 12);

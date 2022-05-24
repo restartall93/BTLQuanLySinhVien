@@ -48,7 +48,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.Location = new System.Drawing.Point(430, 34);
+            this.txtTimKiem.Location = new System.Drawing.Point(522, 20);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(232, 20);
             this.txtTimKiem.TabIndex = 4;
@@ -57,7 +57,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(355, 26);
+            this.label1.Location = new System.Drawing.Point(447, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 3;
@@ -82,11 +82,11 @@
             this.email,
             this.diachi,
             this.btnDelete});
-            this.dgvDSGV.Location = new System.Drawing.Point(0, 85);
+            this.dgvDSGV.Location = new System.Drawing.Point(0, 66);
             this.dgvDSGV.Name = "dgvDSGV";
             this.dgvDSGV.ReadOnly = true;
             this.dgvDSGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSGV.Size = new System.Drawing.Size(857, 425);
+            this.dgvDSGV.Size = new System.Drawing.Size(857, 444);
             this.dgvDSGV.TabIndex = 7;
             this.dgvDSGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSGV_CellClick);
             this.dgvDSGV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSGV_CellDoubleClick);
@@ -153,7 +153,7 @@
             this.btnThemMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThemMoi.Image = global::QuanLySinhVien.Properties.Resources.add_people;
             this.btnThemMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemMoi.Location = new System.Drawing.Point(762, 26);
+            this.btnThemMoi.Location = new System.Drawing.Point(12, 12);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(85, 34);
             this.btnThemMoi.TabIndex = 5;
@@ -166,7 +166,7 @@
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTimKiem.Image = global::QuanLySinhVien.Properties.Resources.icon_search1;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(668, 26);
+            this.btnTimKiem.Location = new System.Drawing.Point(760, 12);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(85, 34);
             this.btnTimKiem.TabIndex = 6;
