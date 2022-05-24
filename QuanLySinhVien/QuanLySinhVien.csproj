@@ -245,5 +245,20 @@
   <ItemGroup>
     <None Include="Images\Science Courses icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Data-List-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon system 1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

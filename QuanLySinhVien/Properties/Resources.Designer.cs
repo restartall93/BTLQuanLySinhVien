@@ -93,6 +93,26 @@ namespace QuanLySinhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Data_List_icon {
+            get {
+                object obj = ResourceManager.GetObject("Data-List-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_data {
+            get {
+                object obj = ResourceManager.GetObject("icon data", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_done {
             get {
                 object obj = ResourceManager.GetObject("icon done", resourceCulture);
@@ -106,6 +126,16 @@ namespace QuanLySinhVien.Properties {
         internal static System.Drawing.Bitmap icon_exit {
             get {
                 object obj = ResourceManager.GetObject("icon exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_function {
+            get {
+                object obj = ResourceManager.GetObject("icon function", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,26 @@ namespace QuanLySinhVien.Properties {
         internal static System.Drawing.Bitmap icon_search3 {
             get {
                 object obj = ResourceManager.GetObject("icon search3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_system {
+            get {
+                object obj = ResourceManager.GetObject("icon system", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_system_1 {
+            get {
+                object obj = ResourceManager.GetObject("icon system 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

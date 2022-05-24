@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDSDiemThi));
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTuKhoa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,17 +39,20 @@
             // btnTimKiem
             // 
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.Location = new System.Drawing.Point(796, 23);
+            this.btnTimKiem.Image = global::QuanLySinhVien.Properties.Resources.icon_search;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(780, 12);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiem.Size = new System.Drawing.Size(85, 34);
             this.btnTimKiem.TabIndex = 8;
             this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = true;
             // 
             // txtTuKhoa
             // 
             this.txtTuKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTuKhoa.Location = new System.Drawing.Point(560, 25);
+            this.txtTuKhoa.Location = new System.Drawing.Point(542, 19);
             this.txtTuKhoa.Name = "txtTuKhoa";
             this.txtTuKhoa.Size = new System.Drawing.Size(232, 20);
             this.txtTuKhoa.TabIndex = 6;
@@ -56,12 +60,13 @@
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(507, 28);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(473, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "Từ khóa";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvKQHT
             // 
@@ -88,6 +93,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTuKhoa);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDSDiemThi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kết Quả Học Tập";
