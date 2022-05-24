@@ -169,7 +169,6 @@
             // 
             // btnThemmoi
             // 
-            this.btnThemmoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThemmoi.Image = global::QuanLySinhVien.Properties.Resources.add_people;
             this.btnThemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemmoi.Location = new System.Drawing.Point(13, 14);
