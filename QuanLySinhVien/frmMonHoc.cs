@@ -62,7 +62,7 @@ namespace QuanLySinhVien
 
             string sql = "";
             List<CustomParameter> lstPara = new List<CustomParameter>();
-            if(String.IsNullOrEmpty(mamh))
+            if(string.IsNullOrEmpty(mamh))
             {
                 sql = "insertMH";
                 lstPara.Add(new CustomParameter()
