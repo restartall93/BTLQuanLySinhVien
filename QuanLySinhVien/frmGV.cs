@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,7 +44,102 @@ namespace QuanLySinhVien
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
+            string sql = "";
+            DateTime ngaysinh;
+            List<CustomParameter> lstPara = new List<CustomParameter>();
+            try
+            {
+                ngaysinh = DateTime.ParseExact(mtbNgaysinh.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);       
+            }
+            catch
+            {
+                MessageBox.Show("Ngày Sinh không hợp lệ");
+                mtbNgaysinh.Select();
+                return;
+            }
+            if (string.IsNullOrEmpty(mgv))
+            {
+                sql = "insertGV";
+                lstPara.Add(new CustomParameter()
+                {
+                    key = "@nguoitao",
+                    value = nguoithucthi
+                });
+            }
+            else
+            {
+                sql = "updateGV";
+                lstPara.Add(new CustomParameter()
+                {
+                    key = "@nguoicapnhat",
+                    value = nguoithucthi
+                });
+                lstPara.Add(new CustomParameter()
+                {
+                    key = "@magiaovien",
+                    value = mgv
+                });
+            }
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@ho",
+                value= txtHo.Text
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@tendem",
+                value = txtTendem.Text
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@ten",
+                value = txtTen.Text
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@ngaysinh",
+                value= ngaysinh.ToString("yyyy-MM-dd")
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@gioitinh",
+                value= rbtNam.Checked?"1":"0"
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@email",
+                value = txtEmail.Text
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@dienthoai",
+                value = txtDienthoai.Text
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@diachi",
+                value = txtDiachi.Text
+            });
+            var rs = new Database().ExeCute(sql, lstPara);
+            if(rs == 1)
+            {
+                if (string.IsNullOrEmpty(mgv))
+                {
+                    if (string.IsNullOrEmpty(mgv))
+                    {
+                        MessageBox.Show("Thêm mới giáo viên thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật mới giáo viên thành công");
+                    }
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Thực thi truy vấn thất bại");
+                }
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

@@ -81,5 +81,11 @@ namespace QuanLySinhVien
                 }
             }
         }
+
+        private void btnThemMoi_Click(object sender, EventArgs e)
+        {
+            new frmGV(null).ShowDialog();
+            loadDSGV();
+        }
     }
 }
