@@ -57,7 +57,7 @@
             this.btnHuy.Location = new System.Drawing.Point(283, 298);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(62, 34);
-            this.btnHuy.TabIndex = 46;
+            this.btnHuy.TabIndex = 45;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -70,7 +70,7 @@
             this.btnLuu.Location = new System.Drawing.Point(120, 298);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(62, 34);
-            this.btnLuu.TabIndex = 45;
+            this.btnLuu.TabIndex = 44;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@
             this.rbtNu.Location = new System.Drawing.Point(283, 148);
             this.rbtNu.Name = "rbtNu";
             this.rbtNu.Size = new System.Drawing.Size(39, 17);
-            this.rbtNu.TabIndex = 44;
+            this.rbtNu.TabIndex = 40;
             this.rbtNu.Text = "Nữ";
             this.rbtNu.UseVisualStyleBackColor = true;
             // 
@@ -93,7 +93,7 @@
             this.rbtNam.Location = new System.Drawing.Point(192, 148);
             this.rbtNam.Name = "rbtNam";
             this.rbtNam.Size = new System.Drawing.Size(47, 17);
-            this.rbtNam.TabIndex = 43;
+            this.rbtNam.TabIndex = 39;
             this.rbtNam.TabStop = true;
             this.rbtNam.Text = "Nam";
             this.rbtNam.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@
             this.mtbNgaysinh.Mask = "00/00/0000";
             this.mtbNgaysinh.Name = "mtbNgaysinh";
             this.mtbNgaysinh.Size = new System.Drawing.Size(100, 20);
-            this.mtbNgaysinh.TabIndex = 42;
+            this.mtbNgaysinh.TabIndex = 38;
             this.mtbNgaysinh.ValidatingType = typeof(System.DateTime);
             // 
             // txtDienthoai
@@ -112,28 +112,28 @@
             this.txtDienthoai.Location = new System.Drawing.Point(177, 239);
             this.txtDienthoai.Name = "txtDienthoai";
             this.txtDienthoai.Size = new System.Drawing.Size(229, 20);
-            this.txtDienthoai.TabIndex = 39;
+            this.txtDienthoai.TabIndex = 43;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(177, 209);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(229, 20);
-            this.txtEmail.TabIndex = 38;
+            this.txtEmail.TabIndex = 42;
             // 
             // txtDiachi
             // 
             this.txtDiachi.Location = new System.Drawing.Point(177, 178);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(229, 20);
-            this.txtDiachi.TabIndex = 37;
+            this.txtDiachi.TabIndex = 41;
             // 
             // txtTen
             // 
             this.txtTen.Location = new System.Drawing.Point(177, 90);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(229, 20);
-            this.txtTen.TabIndex = 35;
+            this.txtTen.TabIndex = 37;
             // 
             // label5
             // 
@@ -194,7 +194,7 @@
             this.txtTendem.Location = new System.Drawing.Point(177, 64);
             this.txtTendem.Name = "txtTendem";
             this.txtTendem.Size = new System.Drawing.Size(229, 20);
-            this.txtTendem.TabIndex = 40;
+            this.txtTendem.TabIndex = 36;
             // 
             // label2
             // 
@@ -210,7 +210,7 @@
             this.txtHo.Location = new System.Drawing.Point(177, 39);
             this.txtHo.Name = "txtHo";
             this.txtHo.Size = new System.Drawing.Size(229, 20);
-            this.txtHo.TabIndex = 36;
+            this.txtHo.TabIndex = 35;
             // 
             // label1
             // 

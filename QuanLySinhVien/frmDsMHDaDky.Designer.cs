@@ -34,6 +34,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDSMHDky = new System.Windows.Forms.DataGridView();
             this.btnDkyMoi = new System.Windows.Forms.Button();
+            this.malophoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenmonhoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sotinchi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemthilan1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemthilan2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMHDky)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +86,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDSMHDky.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSMHDky.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSMHDky.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.malophoc,
+            this.tenmonhoc,
+            this.sotinchi,
+            this.gvien,
+            this.diemthilan1,
+            this.diemthilan2});
             this.dgvDSMHDky.Location = new System.Drawing.Point(18, 64);
             this.dgvDSMHDky.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSMHDky.MultiSelect = false;
@@ -103,6 +116,48 @@
             this.btnDkyMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDkyMoi.UseVisualStyleBackColor = true;
             this.btnDkyMoi.Click += new System.EventHandler(this.btnDkyMoi_Click);
+            // 
+            // malophoc
+            // 
+            this.malophoc.DataPropertyName = "malophoc";
+            this.malophoc.HeaderText = "Mã Lớp Học";
+            this.malophoc.Name = "malophoc";
+            this.malophoc.ReadOnly = true;
+            // 
+            // tenmonhoc
+            // 
+            this.tenmonhoc.DataPropertyName = "tenmonhoc";
+            this.tenmonhoc.HeaderText = "Tên Môn Học";
+            this.tenmonhoc.Name = "tenmonhoc";
+            this.tenmonhoc.ReadOnly = true;
+            // 
+            // sotinchi
+            // 
+            this.sotinchi.DataPropertyName = "sotinchi";
+            this.sotinchi.HeaderText = "Số Tín Chỉ";
+            this.sotinchi.Name = "sotinchi";
+            this.sotinchi.ReadOnly = true;
+            // 
+            // gvien
+            // 
+            this.gvien.DataPropertyName = "gvien";
+            this.gvien.HeaderText = "Giáo Viên";
+            this.gvien.Name = "gvien";
+            this.gvien.ReadOnly = true;
+            // 
+            // diemthilan1
+            // 
+            this.diemthilan1.DataPropertyName = "diemthilan1";
+            this.diemthilan1.HeaderText = "Điểm Thi Lần 1";
+            this.diemthilan1.Name = "diemthilan1";
+            this.diemthilan1.ReadOnly = true;
+            // 
+            // diemthilan2
+            // 
+            this.diemthilan2.DataPropertyName = "diemthilan2";
+            this.diemthilan2.HeaderText = "Điểm Thi Lần 2";
+            this.diemthilan2.Name = "diemthilan2";
+            this.diemthilan2.ReadOnly = true;
             // 
             // frmDsMHDaDky
             // 
@@ -133,5 +188,11 @@
         private System.Windows.Forms.TextBox txtTimkiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDSMHDky;
+        private System.Windows.Forms.DataGridViewTextBoxColumn malophoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenmonhoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sotinchi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gvien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diemthilan1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diemthilan2;
     }
 }

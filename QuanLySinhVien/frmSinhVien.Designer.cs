@@ -83,7 +83,7 @@
             this.rbtNu.Location = new System.Drawing.Point(283, 148);
             this.rbtNu.Name = "rbtNu";
             this.rbtNu.Size = new System.Drawing.Size(39, 17);
-            this.rbtNu.TabIndex = 23;
+            this.rbtNu.TabIndex = 19;
             this.rbtNu.Text = "Nữ";
             this.rbtNu.UseVisualStyleBackColor = true;
             // 
@@ -94,7 +94,7 @@
             this.rbtNam.Location = new System.Drawing.Point(192, 148);
             this.rbtNam.Name = "rbtNam";
             this.rbtNam.Size = new System.Drawing.Size(47, 17);
-            this.rbtNam.TabIndex = 22;
+            this.rbtNam.TabIndex = 18;
             this.rbtNam.TabStop = true;
             this.rbtNam.Text = "Nam";
             this.rbtNam.UseVisualStyleBackColor = true;
@@ -105,7 +105,7 @@
             this.mtbNgaysinh.Mask = "00/00/0000";
             this.mtbNgaysinh.Name = "mtbNgaysinh";
             this.mtbNgaysinh.Size = new System.Drawing.Size(100, 20);
-            this.mtbNgaysinh.TabIndex = 21;
+            this.mtbNgaysinh.TabIndex = 17;
             this.mtbNgaysinh.ValidatingType = typeof(System.DateTime);
             // 
             // txtDienthoai
@@ -113,21 +113,21 @@
             this.txtDienthoai.Location = new System.Drawing.Point(177, 269);
             this.txtDienthoai.Name = "txtDienthoai";
             this.txtDienthoai.Size = new System.Drawing.Size(229, 20);
-            this.txtDienthoai.TabIndex = 18;
+            this.txtDienthoai.TabIndex = 23;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(177, 239);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(229, 20);
-            this.txtEmail.TabIndex = 17;
+            this.txtEmail.TabIndex = 22;
             // 
             // txtDiachi
             // 
             this.txtDiachi.Location = new System.Drawing.Point(177, 208);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(229, 20);
-            this.txtDiachi.TabIndex = 16;
+            this.txtDiachi.TabIndex = 21;
             // 
             // txtQuequan
             // 
@@ -141,7 +141,7 @@
             this.txtTen.Location = new System.Drawing.Point(177, 91);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(229, 20);
-            this.txtTen.TabIndex = 14;
+            this.txtTen.TabIndex = 16;
             // 
             // label5
             // 
@@ -211,7 +211,7 @@
             this.txtTendem.Location = new System.Drawing.Point(177, 65);
             this.txtTendem.Name = "txtTendem";
             this.txtTendem.Size = new System.Drawing.Size(229, 20);
-            this.txtTendem.TabIndex = 19;
+            this.txtTendem.TabIndex = 15;
             // 
             // label2
             // 
@@ -227,7 +227,7 @@
             this.txtHo.Location = new System.Drawing.Point(177, 39);
             this.txtHo.Name = "txtHo";
             this.txtHo.Size = new System.Drawing.Size(229, 20);
-            this.txtHo.TabIndex = 15;
+            this.txtHo.TabIndex = 14;
             // 
             // label1
             // 
