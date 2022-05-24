@@ -103,10 +103,10 @@
             this.Controls.Add(this.cbbMonhoc);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLopHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLopHoc";
+            this.Text = "Thêm Lớp Học Mới";
             this.Load += new System.EventHandler(this.frmLopHoc_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

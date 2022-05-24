@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDSSV));
-            this.btnThemmoi = new System.Windows.Forms.Button();
-            this.btnTimkiem = new System.Windows.Forms.Button();
             this.txtTukhoa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSinhVien = new System.Windows.Forms.DataGridView();
@@ -43,47 +41,24 @@
             this.dienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnThemmoi = new System.Windows.Forms.Button();
+            this.btnTimkiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnThemmoi
-            // 
-            this.btnThemmoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemmoi.Image = global::QuanLySinhVien.Properties.Resources.add_people;
-            this.btnThemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemmoi.Location = new System.Drawing.Point(703, 25);
-            this.btnThemmoi.Name = "btnThemmoi";
-            this.btnThemmoi.Size = new System.Drawing.Size(85, 34);
-            this.btnThemmoi.TabIndex = 8;
-            this.btnThemmoi.Text = "Thêm mới";
-            this.btnThemmoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemmoi.UseVisualStyleBackColor = true;
-            this.btnThemmoi.Click += new System.EventHandler(this.btnThemmoi_Click);
-            // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimkiem.Location = new System.Drawing.Point(612, 25);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(85, 34);
-            this.btnTimkiem.TabIndex = 7;
-            this.btnTimkiem.Text = "Tìm kiếm";
-            this.btnTimkiem.UseVisualStyleBackColor = true;
-            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // txtTukhoa
             // 
             this.txtTukhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTukhoa.Location = new System.Drawing.Point(421, 32);
+            this.txtTukhoa.Location = new System.Drawing.Point(523, 22);
             this.txtTukhoa.Name = "txtTukhoa";
-            this.txtTukhoa.Size = new System.Drawing.Size(185, 20);
+            this.txtTukhoa.Size = new System.Drawing.Size(232, 20);
             this.txtTukhoa.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(330, 25);
+            this.label1.Location = new System.Drawing.Point(448, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 5;
@@ -109,12 +84,12 @@
             this.dienthoai,
             this.email,
             this.btnDelete});
-            this.dgvSinhVien.Location = new System.Drawing.Point(0, 80);
+            this.dgvSinhVien.Location = new System.Drawing.Point(0, 59);
             this.dgvSinhVien.Name = "dgvSinhVien";
             this.dgvSinhVien.ReadOnly = true;
             this.dgvSinhVien.RowHeadersWidth = 51;
             this.dgvSinhVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSinhVien.Size = new System.Drawing.Size(800, 370);
+            this.dgvSinhVien.Size = new System.Drawing.Size(857, 451);
             this.dgvSinhVien.TabIndex = 9;
             this.dgvSinhVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSinhVien_CellClick);
             this.dgvSinhVien.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSinhVien_CellDoubleClick);
@@ -192,11 +167,39 @@
             this.btnDelete.Text = "Xoá";
             this.btnDelete.UseColumnTextForButtonValue = true;
             // 
+            // btnThemmoi
+            // 
+            this.btnThemmoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemmoi.Image = global::QuanLySinhVien.Properties.Resources.add_people;
+            this.btnThemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemmoi.Location = new System.Drawing.Point(13, 14);
+            this.btnThemmoi.Name = "btnThemmoi";
+            this.btnThemmoi.Size = new System.Drawing.Size(85, 34);
+            this.btnThemmoi.TabIndex = 8;
+            this.btnThemmoi.Text = "Thêm mới";
+            this.btnThemmoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemmoi.UseVisualStyleBackColor = true;
+            this.btnThemmoi.Click += new System.EventHandler(this.btnThemmoi_Click);
+            // 
+            // btnTimkiem
+            // 
+            this.btnTimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimkiem.Image = global::QuanLySinhVien.Properties.Resources.icon_search2;
+            this.btnTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimkiem.Location = new System.Drawing.Point(761, 14);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.Size = new System.Drawing.Size(85, 34);
+            this.btnTimkiem.TabIndex = 7;
+            this.btnTimkiem.Text = "Tìm kiếm";
+            this.btnTimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
             // frmDSSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(857, 510);
             this.Controls.Add(this.dgvSinhVien);
             this.Controls.Add(this.btnThemmoi);
             this.Controls.Add(this.btnTimkiem);
@@ -205,7 +208,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDSSV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDSSV";
+            this.Text = "Danh Sách Sinh Viên";
             this.Load += new System.EventHandler(this.frmDSSV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();
             this.ResumeLayout(false);

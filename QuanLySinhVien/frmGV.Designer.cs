@@ -100,7 +100,7 @@
             // 
             // mtbNgaysinh
             // 
-            this.mtbNgaysinh.Location = new System.Drawing.Point(177, 117);
+            this.mtbNgaysinh.Location = new System.Drawing.Point(177, 116);
             this.mtbNgaysinh.Mask = "00/00/0000";
             this.mtbNgaysinh.Name = "mtbNgaysinh";
             this.mtbNgaysinh.Size = new System.Drawing.Size(100, 20);
@@ -109,28 +109,28 @@
             // 
             // txtDienthoai
             // 
-            this.txtDienthoai.Location = new System.Drawing.Point(177, 240);
+            this.txtDienthoai.Location = new System.Drawing.Point(177, 239);
             this.txtDienthoai.Name = "txtDienthoai";
             this.txtDienthoai.Size = new System.Drawing.Size(229, 20);
             this.txtDienthoai.TabIndex = 39;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(177, 210);
+            this.txtEmail.Location = new System.Drawing.Point(177, 209);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(229, 20);
             this.txtEmail.TabIndex = 38;
             // 
             // txtDiachi
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(177, 179);
+            this.txtDiachi.Location = new System.Drawing.Point(177, 178);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(229, 20);
             this.txtDiachi.TabIndex = 37;
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(177, 91);
+            this.txtTen.Location = new System.Drawing.Point(177, 90);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(229, 20);
             this.txtTen.TabIndex = 35;
@@ -191,7 +191,7 @@
             // 
             // txtTendem
             // 
-            this.txtTendem.Location = new System.Drawing.Point(177, 65);
+            this.txtTendem.Location = new System.Drawing.Point(177, 64);
             this.txtTendem.Name = "txtTendem";
             this.txtTendem.Size = new System.Drawing.Size(229, 20);
             this.txtTendem.TabIndex = 40;
@@ -215,7 +215,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 42);
+            this.label1.Location = new System.Drawing.Point(64, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 34;
@@ -248,7 +248,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmGV";
+            this.Text = "Thông Tin Giáo Viên";
             this.Load += new System.EventHandler(this.frmGV_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

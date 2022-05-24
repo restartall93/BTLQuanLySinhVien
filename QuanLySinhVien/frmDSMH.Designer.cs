@@ -40,42 +40,49 @@
             // btnThemmoi
             // 
             this.btnThemmoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemmoi.Location = new System.Drawing.Point(716, 36);
+            this.btnThemmoi.Image = global::QuanLySinhVien.Properties.Resources.button_add_icon;
+            this.btnThemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemmoi.Location = new System.Drawing.Point(12, 16);
             this.btnThemmoi.Name = "btnThemmoi";
-            this.btnThemmoi.Size = new System.Drawing.Size(75, 23);
+            this.btnThemmoi.Size = new System.Drawing.Size(85, 39);
             this.btnThemmoi.TabIndex = 6;
             this.btnThemmoi.Text = "Thêm mới";
+            this.btnThemmoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemmoi.UseVisualStyleBackColor = true;
             this.btnThemmoi.Click += new System.EventHandler(this.btnThemmoi_Click);
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.Location = new System.Drawing.Point(635, 36);
+            this.btnTimKiem.Image = global::QuanLySinhVien.Properties.Resources.icon_search;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(760, 16);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiem.Size = new System.Drawing.Size(85, 39);
             this.btnTimKiem.TabIndex = 7;
             this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.Location = new System.Drawing.Point(475, 37);
+            this.txtTimKiem.Location = new System.Drawing.Point(522, 25);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(154, 20);
+            this.txtTimKiem.Size = new System.Drawing.Size(232, 20);
             this.txtTimKiem.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(422, 41);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(450, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(85, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "Từ khóa";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvDSMH
             // 
@@ -88,13 +95,13 @@
             this.dgvDSMH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSMH.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvDSMH.Location = new System.Drawing.Point(9, 75);
-            this.dgvDSMH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDSMH.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSMH.Name = "dgvDSMH";
             this.dgvDSMH.ReadOnly = true;
             this.dgvDSMH.RowHeadersWidth = 51;
             this.dgvDSMH.RowTemplate.Height = 24;
             this.dgvDSMH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSMH.Size = new System.Drawing.Size(782, 375);
+            this.dgvDSMH.Size = new System.Drawing.Size(839, 435);
             this.dgvDSMH.TabIndex = 8;
             this.dgvDSMH.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMH_CellDoubleClick);
             // 
@@ -102,17 +109,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(857, 510);
             this.Controls.Add(this.btnThemmoi);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDSMH);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDSMH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDSMH";
+            this.Text = "Danh Sách Môn Học";
             this.Load += new System.EventHandler(this.frmDSMH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMH)).EndInit();
             this.ResumeLayout(false);

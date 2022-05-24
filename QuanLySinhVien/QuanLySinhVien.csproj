@@ -236,5 +236,14 @@
   <ItemGroup>
     <None Include="Images\add people.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\button add icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Science Courses icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

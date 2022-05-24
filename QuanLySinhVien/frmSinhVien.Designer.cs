@@ -101,7 +101,7 @@
             // 
             // mtbNgaysinh
             // 
-            this.mtbNgaysinh.Location = new System.Drawing.Point(177, 117);
+            this.mtbNgaysinh.Location = new System.Drawing.Point(177, 116);
             this.mtbNgaysinh.Mask = "00/00/0000";
             this.mtbNgaysinh.Name = "mtbNgaysinh";
             this.mtbNgaysinh.Size = new System.Drawing.Size(100, 20);
@@ -110,28 +110,28 @@
             // 
             // txtDienthoai
             // 
-            this.txtDienthoai.Location = new System.Drawing.Point(177, 270);
+            this.txtDienthoai.Location = new System.Drawing.Point(177, 269);
             this.txtDienthoai.Name = "txtDienthoai";
             this.txtDienthoai.Size = new System.Drawing.Size(229, 20);
             this.txtDienthoai.TabIndex = 18;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(177, 240);
+            this.txtEmail.Location = new System.Drawing.Point(177, 239);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(229, 20);
             this.txtEmail.TabIndex = 17;
             // 
             // txtDiachi
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(177, 209);
+            this.txtDiachi.Location = new System.Drawing.Point(177, 208);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(229, 20);
             this.txtDiachi.TabIndex = 16;
             // 
             // txtQuequan
             // 
-            this.txtQuequan.Location = new System.Drawing.Point(177, 178);
+            this.txtQuequan.Location = new System.Drawing.Point(177, 177);
             this.txtQuequan.Name = "txtQuequan";
             this.txtQuequan.Size = new System.Drawing.Size(229, 20);
             this.txtQuequan.TabIndex = 20;
@@ -200,7 +200,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 94);
+            this.label3.Location = new System.Drawing.Point(64, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 7;
@@ -216,7 +216,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 68);
+            this.label2.Location = new System.Drawing.Point(64, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 6;
@@ -232,7 +232,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 42);
+            this.label1.Location = new System.Drawing.Point(64, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 13;
@@ -267,7 +267,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSinhVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSinhVien";
+            this.Text = "Thông Tin Sinh Viên";
             this.Load += new System.EventHandler(this.frmSinhVien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

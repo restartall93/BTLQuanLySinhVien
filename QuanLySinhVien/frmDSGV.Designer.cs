@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDSGV));
-            this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDSGV = new System.Windows.Forms.DataGridView();
@@ -42,33 +41,23 @@
             this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnThemMoi = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSGV)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.Location = new System.Drawing.Point(611, 26);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(85, 34);
-            this.btnTimKiem.TabIndex = 6;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.Location = new System.Drawing.Point(400, 34);
+            this.txtTimKiem.Location = new System.Drawing.Point(430, 34);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(196, 20);
+            this.txtTimKiem.Size = new System.Drawing.Size(232, 20);
             this.txtTimKiem.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(309, 26);
+            this.label1.Location = new System.Drawing.Point(355, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 3;
@@ -97,7 +86,7 @@
             this.dgvDSGV.Name = "dgvDSGV";
             this.dgvDSGV.ReadOnly = true;
             this.dgvDSGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSGV.Size = new System.Drawing.Size(800, 365);
+            this.dgvDSGV.Size = new System.Drawing.Size(857, 425);
             this.dgvDSGV.TabIndex = 7;
             this.dgvDSGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSGV_CellClick);
             this.dgvDSGV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSGV_CellDoubleClick);
@@ -164,7 +153,7 @@
             this.btnThemMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThemMoi.Image = global::QuanLySinhVien.Properties.Resources.add_people;
             this.btnThemMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemMoi.Location = new System.Drawing.Point(705, 26);
+            this.btnThemMoi.Location = new System.Drawing.Point(762, 26);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(85, 34);
             this.btnThemMoi.TabIndex = 5;
@@ -172,11 +161,25 @@
             this.btnThemMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemMoi.UseVisualStyleBackColor = true;
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimKiem.Image = global::QuanLySinhVien.Properties.Resources.icon_search1;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(668, 26);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(85, 34);
+            this.btnTimKiem.TabIndex = 6;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
             // frmDSGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(857, 510);
             this.Controls.Add(this.dgvDSGV);
             this.Controls.Add(this.btnThemMoi);
             this.Controls.Add(this.btnTimKiem);
@@ -185,7 +188,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDSGV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDSGV";
+            this.Text = "Danh Sách Giáo Viên";
             this.Load += new System.EventHandler(this.frmDSGV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSGV)).EndInit();
             this.ResumeLayout(false);

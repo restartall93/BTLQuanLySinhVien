@@ -48,7 +48,7 @@
             this.dgvDSLH.RowHeadersWidth = 51;
             this.dgvDSLH.RowTemplate.Height = 24;
             this.dgvDSLH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSLH.Size = new System.Drawing.Size(600, 366);
+            this.dgvDSLH.Size = new System.Drawing.Size(857, 510);
             this.dgvDSLH.TabIndex = 0;
             this.dgvDSLH.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSLH_CellDoubleClick);
             // 
@@ -56,14 +56,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(857, 510);
             this.Controls.Add(this.dgvDSLH);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDangkyMonhoc";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Danh Sách Lớp Học";
+            this.Text = "Danh Sách Lớp Đăng Ký";
             this.Load += new System.EventHandler(this.frmDangkyMonhoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSLH)).EndInit();
             this.ResumeLayout(false);
