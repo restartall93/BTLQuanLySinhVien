@@ -12,9 +12,31 @@ namespace QuanLySinhVien
 {
     public partial class frmDSDiemThi : Form
     {
-        public frmDSDiemThi()
+        public frmDSDiemThi(string msv)
         {
+            this.msv = msv;
             InitializeComponent();
+        }
+        private string msv;
+
+        private void frmDSDiemThi_Load(object sender, EventArgs e)
+        {
+            LoadKQHT();
+        }
+        private void LoadKQHT()
+        {
+            List<CustomParameter> lstPara = new List<CustomParameter>();
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@masinhvien",
+                value = msv
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@tukhoa",
+                value = txtTuKhoa.Text
+            });
+            dgvKQHT.DataSource = new Database().SelectData("tracuudiem", lstPara);
         }
     }
 }

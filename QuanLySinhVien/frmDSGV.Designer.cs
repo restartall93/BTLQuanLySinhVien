@@ -150,7 +150,6 @@
             // 
             // btnThemMoi
             // 
-            this.btnThemMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThemMoi.Image = global::QuanLySinhVien.Properties.Resources.add_people;
             this.btnThemMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemMoi.Location = new System.Drawing.Point(12, 12);

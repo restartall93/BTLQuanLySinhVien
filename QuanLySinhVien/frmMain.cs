@@ -88,7 +88,7 @@ namespace QuanLySinhVien
 
         private void traCuuDiemToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var f = new frmQuanLyLop(taikhoan);
+            var f = new frmDSDiemThi(taikhoan);
             AddForm(f);
         }
 

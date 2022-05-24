@@ -29,64 +29,70 @@
         private void InitializeComponent()
         {
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.txtTuKhoa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvDiemThi = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiemThi)).BeginInit();
+            this.dgvKQHT = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKQHT)).BeginInit();
             this.SuspendLayout();
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.Location = new System.Drawing.Point(786, 23);
+            this.btnTimKiem.Location = new System.Drawing.Point(796, 23);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
             this.btnTimKiem.TabIndex = 8;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             // 
-            // txtTimKiem
+            // txtTuKhoa
             // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.Location = new System.Drawing.Point(550, 25);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(232, 20);
-            this.txtTimKiem.TabIndex = 6;
+            this.txtTuKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTuKhoa.Location = new System.Drawing.Point(560, 25);
+            this.txtTuKhoa.Name = "txtTuKhoa";
+            this.txtTuKhoa.Size = new System.Drawing.Size(232, 20);
+            this.txtTuKhoa.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(497, 28);
+            this.label1.Location = new System.Drawing.Point(507, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Từ khóa";
             // 
-            // dgvDiemThi
+            // dgvKQHT
             // 
-            this.dgvDiemThi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvKQHT.AllowUserToAddRows = false;
+            this.dgvKQHT.AllowUserToDeleteRows = false;
+            this.dgvKQHT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvDiemThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiemThi.Location = new System.Drawing.Point(22, 71);
-            this.dgvDiemThi.Name = "dgvDiemThi";
-            this.dgvDiemThi.Size = new System.Drawing.Size(839, 454);
-            this.dgvDiemThi.TabIndex = 10;
+            this.dgvKQHT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKQHT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKQHT.Location = new System.Drawing.Point(-2, 71);
+            this.dgvKQHT.Name = "dgvKQHT";
+            this.dgvKQHT.ReadOnly = true;
+            this.dgvKQHT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvKQHT.Size = new System.Drawing.Size(873, 475);
+            this.dgvKQHT.TabIndex = 10;
             // 
             // frmDSDiemThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 549);
-            this.Controls.Add(this.dgvDiemThi);
+            this.Controls.Add(this.dgvKQHT);
             this.Controls.Add(this.btnTimKiem);
-            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.txtTuKhoa);
             this.Controls.Add(this.label1);
             this.Name = "frmDSDiemThi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kết Quả Học Tập";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiemThi)).EndInit();
+            this.Load += new System.EventHandler(this.frmDSDiemThi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKQHT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,8 +100,8 @@
 
         #endregion
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.TextBox txtTuKhoa;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvDiemThi;
+        private System.Windows.Forms.DataGridView dgvKQHT;
     }
 }
