@@ -83,6 +83,11 @@ namespace QuanLySinhVien
             lstPara.Add(new CustomParameter()
             {
                 key = "@tenmonhoc",
+                value = txtTenMH.Text
+            });
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@sotinchi",
                 value = txtSoTC.Text
             });
 
