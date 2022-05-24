@@ -70,7 +70,6 @@ namespace QuanLySinhVien
                     }
                 }
             }
-            LoadDSLH();
         }
     }
 }
