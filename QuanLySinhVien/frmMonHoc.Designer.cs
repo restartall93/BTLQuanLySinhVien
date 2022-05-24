@@ -103,6 +103,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMonHoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Môn Học Mới";
             this.Load += new System.EventHandler(this.frmMonHoc_Load);
             this.ResumeLayout(false);
