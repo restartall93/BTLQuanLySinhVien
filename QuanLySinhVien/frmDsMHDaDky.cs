@@ -38,7 +38,7 @@ namespace QuanLySinhVien
 
         private void btnDkyMoi_Click(object sender, EventArgs e)
         {
-            new frmDangkyMonhoc(masv).ShowDialog();
+             new frmDangkyMonhoc(masv).ShowDialog();
             LoadMonDky();
         }
 
@@ -48,6 +48,11 @@ namespace QuanLySinhVien
         }
 
         private void txtTimkiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvDSMHDky_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

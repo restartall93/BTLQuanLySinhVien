@@ -90,6 +90,7 @@
             this.dgvDSMHDky.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSMHDky.Size = new System.Drawing.Size(830, 436);
             this.dgvDSMHDky.TabIndex = 8;
+            this.dgvDSMHDky.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMHDky_CellContentClick);
             // 
             // btnDkyMoi
             // 
@@ -99,7 +100,7 @@
             this.btnDkyMoi.Name = "btnDkyMoi";
             this.btnDkyMoi.Size = new System.Drawing.Size(102, 43);
             this.btnDkyMoi.TabIndex = 6;
-            this.btnDkyMoi.Text = "Đăng ký mới";
+            this.btnDkyMoi.Text = "Đăng Ký Mới";
             this.btnDkyMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDkyMoi.UseVisualStyleBackColor = true;
             this.btnDkyMoi.Click += new System.EventHandler(this.btnDkyMoi_Click);
