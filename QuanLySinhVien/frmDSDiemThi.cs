@@ -38,5 +38,10 @@ namespace QuanLySinhVien
             });
             dgvKQHT.DataSource = new Database().SelectData("tracuudiem", lstPara);
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            LoadKQHT();
+        }
     }
 }
