@@ -55,15 +55,5 @@ namespace QuanLySinhVien
                 loadDSLH();
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTimKiem_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
