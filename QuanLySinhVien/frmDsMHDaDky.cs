@@ -39,6 +39,13 @@ namespace QuanLySinhVien
                 }
             };
             dgvDSMHDky.DataSource = new Database().SelectData("monDaDKy", lst);
+
+            dgvDSMHDky.Columns["malophoc"].HeaderText = "Mã Lớp Học";
+            dgvDSMHDky.Columns["tenmonhoc"].HeaderText = "Tên Môn Học";
+            dgvDSMHDky.Columns["gvien"].HeaderText = "Giáo Viên";
+            dgvDSMHDky.Columns["diemthilan1"].HeaderText = "Điểm Thi Lần 1";
+            dgvDSMHDky.Columns["diemthilan2"].HeaderText = "Điểm Thi Lần 2";
+            dgvDSMHDky.Columns["daketthuc"].HeaderText = "Đã Kết Thúc";
         }
 
         private void btnDkyMoi_Click(object sender, EventArgs e)

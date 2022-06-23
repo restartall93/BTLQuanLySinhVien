@@ -35,6 +35,7 @@
             this.btnKetThuc = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnTraCuu = new System.Windows.Forms.Button();
+            this.btnInDanhSach = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             // 
             this.txtTuKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTuKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTuKhoa.Location = new System.Drawing.Point(535, 18);
+            this.txtTuKhoa.Location = new System.Drawing.Point(425, 18);
             this.txtTuKhoa.Name = "txtTuKhoa";
             this.txtTuKhoa.Size = new System.Drawing.Size(223, 20);
             this.txtTuKhoa.TabIndex = 12;
@@ -51,7 +52,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(459, 12);
+            this.label1.Location = new System.Drawing.Point(349, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 33);
             this.label1.TabIndex = 11;
@@ -111,7 +112,7 @@
             this.btnTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraCuu.Image = global::QuanLySinhVien.Properties.Resources.icon_search3;
             this.btnTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTraCuu.Location = new System.Drawing.Point(764, 12);
+            this.btnTraCuu.Location = new System.Drawing.Point(654, 12);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(85, 33);
             this.btnTraCuu.TabIndex = 13;
@@ -120,11 +121,24 @@
             this.btnTraCuu.UseVisualStyleBackColor = true;
             this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
             // 
+            // btnInDanhSach
+            // 
+            this.btnInDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInDanhSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInDanhSach.Location = new System.Drawing.Point(745, 12);
+            this.btnInDanhSach.Name = "btnInDanhSach";
+            this.btnInDanhSach.Size = new System.Drawing.Size(100, 34);
+            this.btnInDanhSach.TabIndex = 17;
+            this.btnInDanhSach.Text = "In danh sách";
+            this.btnInDanhSach.UseVisualStyleBackColor = true;
+            this.btnInDanhSach.Click += new System.EventHandler(this.btnInDanhSach_Click);
+            // 
             // frmChamDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 510);
+            this.Controls.Add(this.btnInDanhSach);
             this.Controls.Add(this.btnKetThuc);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgvDSSV);
@@ -151,5 +165,6 @@
         private System.Windows.Forms.DataGridView dgvDSSV;
         private System.Windows.Forms.Button btnKetThuc;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnInDanhSach;
     }
 }

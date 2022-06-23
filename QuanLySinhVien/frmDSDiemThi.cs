@@ -37,6 +37,13 @@ namespace QuanLySinhVien
                 value = txtTuKhoa.Text
             });
             dgvKQHT.DataSource = new Database().SelectData("tracuudiem", lstPara);
+
+            dgvKQHT.Columns["mamonhoc"].HeaderText = "Mã Môn Học";
+            dgvKQHT.Columns["tenmonhoc"].HeaderText = "Tên Môn Học";
+            dgvKQHT.Columns["lanhoc"].HeaderText = "Lần Học";
+            dgvKQHT.Columns["gvien"].HeaderText = "Giáo Viên";
+            dgvKQHT.Columns["diemthilan1"].HeaderText = "Điểm Thi Lần 1";
+            dgvKQHT.Columns["diemthilan2"].HeaderText = "Điểm Thi Lần 2";
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
