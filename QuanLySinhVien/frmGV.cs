@@ -29,7 +29,7 @@ namespace QuanLySinhVien
             }
             else
             {
-                this.Text = "Cập nhạt giáo viên";
+                this.Text = "Cập nhật giáo viên";
                 var r = new Database().Select("selectGV'" + int.Parse(mgv) + "'");
                 txtHo.Text = r["ho"].ToString();
                 txtTendem.Text = r["tendem"].ToString();
