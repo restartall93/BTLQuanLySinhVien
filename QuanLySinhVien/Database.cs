@@ -11,7 +11,7 @@ namespace QuanLySinhVien
 {
     public class Database
     {
-        private string connetionString = @"Data Source = DESKTOP-LICKT66;Initial Catalog = QLSV;User ID = sa; Password = habin2001";
+        private string connetionString = @"Data Source = DESKTOP-I1LQTDE;Initial Catalog = QLSV;User ID = sa; Password = ongbut99";
         private SqlConnection conn;
         //private string sql;
         private DataTable dt;
