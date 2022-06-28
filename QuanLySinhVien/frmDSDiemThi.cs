@@ -23,6 +23,17 @@ namespace QuanLySinhVien
         {
             LoadKQHT();
         }
+        public string getKetQua(float diemTB)
+        {
+            if (diemTB>=4)
+            {
+                return "Đạt";
+            }
+            else
+            {
+                return "Trượt";
+            }
+        }
         private void LoadKQHT()
         {
             List<CustomParameter> lstPara = new List<CustomParameter>();
@@ -36,8 +47,15 @@ namespace QuanLySinhVien
                 key = "@tukhoa",
                 value = txtTuKhoa.Text
             });
-            dgvKQHT.DataSource = new Database().SelectData("tracuudiem", lstPara);
+            DataTable dt = new Database().SelectData("tracuudiem", lstPara);
+            DataColumn col9 = new DataColumn("ketqua");
+            dt.Columns.Add(col9);
+            foreach (DataRow r in dt.Rows)
+            {
+                r["ketqua"] = getKetQua(float.Parse(r["diemTB"].ToString()));
+            }
 
+            dgvKQHT.DataSource = dt;
             dgvKQHT.Columns["mamonhoc"].HeaderText = "Mã Môn Học";
             dgvKQHT.Columns["tenmonhoc"].HeaderText = "Tên Môn Học";
             dgvKQHT.Columns["lanhoc"].HeaderText = "Lần Học";
