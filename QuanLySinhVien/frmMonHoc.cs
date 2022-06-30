@@ -75,7 +75,7 @@ namespace QuanLySinhVien
             {
                 lstPara.Add(new CustomParameter()
                 {
-                    key = "@mamomhoc",
+                    key = "@mamonhoc",
                     value = mamh
                 });
                 lstPara.Add(new CustomParameter()
