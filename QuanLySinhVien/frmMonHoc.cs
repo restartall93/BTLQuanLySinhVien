@@ -78,6 +78,11 @@ namespace QuanLySinhVien
                     key = "@mamomhoc",
                     value = mamh
                 });
+                lstPara.Add(new CustomParameter()
+                {
+                    key = "@nguoicapnhat",
+                    value = nguoithuchien
+                });
                 sql = "updateMH";
             }
             lstPara.Add(new CustomParameter()
