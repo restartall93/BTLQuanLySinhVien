@@ -12,13 +12,17 @@ namespace QuanLySinhVien
 {
     public partial class frmDangnhap : Form
     {
+        public string tendangnhap = "";
+        public string loaitk;
         public frmDangnhap()
         {
             InitializeComponent();
         }
-        public string tendangnhap = "";
-        public string loaitk;
-       
+
+        private void frmDangnhap_Load(object sender, EventArgs e)
+        {
+
+        }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             #region ktra_rangbuoc
@@ -43,6 +47,7 @@ namespace QuanLySinhVien
 
             tendangnhap = txtTendangnhap.Text;
             loaitk = "";
+
             #region swtk
             switch (cbbLoaiTaiKhoan.Text)
             {
@@ -57,6 +62,7 @@ namespace QuanLySinhVien
                     break;
             }
             #endregion
+
             List<CustomParameter> lst = new List<CustomParameter>()
             {
                 new CustomParameter()
@@ -79,7 +85,17 @@ namespace QuanLySinhVien
             var rs = new Database().SelectData("dangnhap", lst);
             if(rs.Rows.Count > 0)
             {
+                //Lấy tên tài khoản đăng nhập
+                var taikhoan = txtTendangnhap.Text;
+
+                //Ẩn form Đăng nhập
                 this.Hide();
+
+                //Mở form chương trình chính
+                frmMain frmMain = new frmMain(taikhoan, loaitk);
+
+                //Show lên màn hình dưới dạng Dialog
+                frmMain.ShowDialog();
             }    
             else
             {
@@ -93,9 +109,6 @@ namespace QuanLySinhVien
             Application.Exit();
         }
 
-        private void frmDangnhap_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

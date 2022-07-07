@@ -16,15 +16,21 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
-        private string taikhoan;
-        private string loaitk;
+
+        public frmMain(string taikhoan, string loaitk) : this()
+        {
+            this.Taikhoan = taikhoan;
+            this.Loaitk = loaitk;
+        }
+        public string Taikhoan { get; }
+        public string Loaitk { get; }
         private void frmMain_Load(object sender, EventArgs e)
         {
-            var fn = new frmDangnhap();
-            fn.ShowDialog();
-            taikhoan = fn.tendangnhap;
-            loaitk = fn.loaitk;
-            if (loaitk.Equals("admin"))
+            if (string.IsNullOrWhiteSpace(Loaitk))
+            {
+                return;
+            }
+            if (Loaitk.Equals("admin"))
             {
                 quanLyLopToolStripMenuItem.Visible = false;
                 chucNangToolStripMenuItem.Visible = false;
@@ -32,7 +38,7 @@ namespace QuanLySinhVien
             else
             {
                 quanLyToolStripMenuItem.Visible = false;
-                if (loaitk.Equals("gv"))
+                if (Loaitk.Equals("gv"))
                 {
                     chucNangToolStripMenuItem.Visible = false;
                 }
@@ -82,24 +88,26 @@ namespace QuanLySinhVien
 
         private void dangKyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var f = new frmDsMHDaDky(taikhoan);
+            var f = new frmDsMHDaDky(Taikhoan);
             AddForm(f);
         }
 
         private void traCuuDiemToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var f = new frmDSDiemThi(taikhoan);
+            var f = new frmDSDiemThi(Taikhoan);
             AddForm(f);
         }
 
         private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            frmDangnhap frmDangnhap = new frmDangnhap();
+            frmDangnhap.ShowDialog();
         }
 
         private void quanLyLopToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var f = new frmQuanLyLop(taikhoan);
+            var f = new frmQuanLyLop(Taikhoan);
             AddForm(f);
         }
     }
